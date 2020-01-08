@@ -1,4 +1,4 @@
-<form name="contact" action="/404.md" netlify>
+<!-- <form name="contact" action="/404.md" netlify>
   <label for="name">Name</label>
   <input type="text" name="name" id="name" autocomplete="name" placeholder="Your name" title="Please enter your name"
     required>
@@ -12,4 +12,24 @@
   <label for="message">Message</label>
   <textarea name="message" id="message" placeholder="Write your message here" rows="7" required></textarea>
   <button type="submit">Send Message</button>
+</form>
+ -->
+
+
+<form name="submitMeme" netlify-honeypot="bot-field" action="/404.html" netlify>
+  <p style="display:none;">
+    <label>Don’t fill this out: <input name="bot-field"></label>
+  </p>
+  <p>
+    <label>Name: <input type="text" name="name" size="40"></label>
+  </p>
+  <p>
+    <label>Email: <input type="text" name="email" size="40"></label>
+  </p>
+  <p>
+    <label>Meme URL: <input type="text" name="memeurl" size="40"></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
 </form>
